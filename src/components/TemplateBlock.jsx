@@ -1,4 +1,5 @@
 import { StyledTemplateBlock } from './styled_components/editSidebarStyles';
+import { useEffect } from 'react';
 import Button from '../UI/button/Button';
 function TemplateBlock(props) {
 	function clearInfo() {
@@ -13,6 +14,8 @@ function TemplateBlock(props) {
 			location: 'Berlin, Germany',
 		});
 	}
+
+	useEffect(loadTemplate, []);
 
 	return (
 		<StyledTemplateBlock>
