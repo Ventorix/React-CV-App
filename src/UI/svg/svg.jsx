@@ -1,4 +1,14 @@
-import styled from 'styled-components';
+import { styled, keyframes } from 'styled-components';
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360);
+  }
+`;
 
 export const LogoSVG = styled.svg`
 	border-radius: 50%;
@@ -14,4 +24,14 @@ export const SmallSVG = styled.img`
 	height: 16px;
 	width: 16px;
 	margin-right: 5px;
+`;
+
+export const ArrowSVG = styled(SmallSVG)`
+	height: 24px;
+	width: 24px;
+	transition: transform 0.3s;
+	transform: rotate(0deg);
+	&.open {
+		transform: rotate(180deg);
+	}
 `;

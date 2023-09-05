@@ -1,29 +1,22 @@
 import { StyledResumeTopBlock, StyledContactInfoBlock } from './styled_components/resumeStyles';
-import SmallSVGImg from './SmallSVGImg';
+import { SmallSVG } from '../UI/svg/svg';
+
 function ResumeTopBlock(props) {
 	return (
 		<StyledResumeTopBlock>
 			<h1>{props.info.name}</h1>
 			<StyledContactInfoBlock>
 				<div>
-					{props.info.email ? (
-						<SmallSVGImg src='../src/assets/email.svg' alt='Email'></SmallSVGImg>
-					) : (
-						''
-					)}
+					{props.info.email ? <SmallSVG src='../src/assets/email.svg' alt='Email'></SmallSVG> : ''}
 					<span>{props.info.email}</span>
 				</div>
 				<div>
-					{props.info.phone ? (
-						<SmallSVGImg src='../src/assets/phone.svg' alt='Phone'></SmallSVGImg>
-					) : (
-						''
-					)}
+					{props.info.phone ? <SmallSVG src='../src/assets/phone.svg' alt='Phone'></SmallSVG> : ''}
 					<span>{props.info.phone}</span>
 				</div>
 				<div>
 					{props.info.location ? (
-						<SmallSVGImg src='../src/assets/map-location.svg' alt='Map location'></SmallSVGImg>
+						<SmallSVG src='../src/assets/map-location.svg' alt='Map location'></SmallSVG>
 					) : (
 						''
 					)}

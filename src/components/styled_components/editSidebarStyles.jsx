@@ -33,7 +33,13 @@ export const StyledFormContainer = styled.div`
 export const StyledForm = styled.form`
 	background-color: ${(props) => props.theme.$white};
 	border-radius: 2rem;
-	padding: 3em;
+	padding: 1.5em;
+`;
+
+export const StyledSection = styled.div`
+	background-color: ${(props) => props.theme.$white};
+	border-radius: 2rem;
+	padding: 1.5em;
 `;
 
 export const StyledInputBlock = styled.div`
@@ -42,4 +48,18 @@ export const StyledInputBlock = styled.div`
 	flex-grow: 1;
 	gap: 6px;
 	margin-bottom: 12px;
+`;
+
+export const StyledSectionTitle = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	gap: 6px;
+`;
+
+export const StyledTitle = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `;

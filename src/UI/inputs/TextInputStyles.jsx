@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const FormTextInput = styled.input`
-	width: 100%;
 	border-radius: 12px;
 	padding: 10px;
 	color: ${(props) => props.theme.$black};

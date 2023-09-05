@@ -1,6 +1,19 @@
 import { StyledTemplateBlock } from './styled_components/editSidebarStyles';
 import Button from '../UI/button/Button';
-function TemplateBlock({ loadTemplate, clearInfo }) {
+function TemplateBlock(props) {
+	function clearInfo() {
+		props.setInfo({ name: '', email: '', phone: '', location: '' });
+	}
+
+	function loadTemplate() {
+		props.setInfo({
+			name: 'John Doe',
+			email: 'randomemail@gmail.com',
+			phone: '+1 (507) 674-4064',
+			location: 'Berlin, Germany',
+		});
+	}
+
 	return (
 		<StyledTemplateBlock>
 			<Button color={'red'} onClick={clearInfo}>
