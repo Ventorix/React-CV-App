@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const PrimaryButton = styled.button`
-	background-color: rgb(122, 122, 452);
+	background-color: ${(props) => props.theme.$orange};
 	color: white;
 	border-radius: 8px;
 	border-color: transparent;
 	width: 150px;
 	padding: 14px;
-	font-size: 20px;
+	font-size: ${(props) => props.theme.$size__l};
 	font-weight: 700;
 	cursor: pointer;
-	&&:hover {
-		background-color: rgb(122, 122, 452, 0.5);
+	&:hover {
+		background-color: rgba(243, 166, 64, 0.8);
 		border: 2px solid white;
 	}
 `;
@@ -19,7 +19,7 @@ export const PrimaryButton = styled.button`
 export const DestructiveButton = styled(PrimaryButton)`
 	background-color: rgb(255, 0, 0);
 
-	&&:hover {
+	&:hover {
 		background-color: rgb(255, 0, 0, 0.5);
 	}
 `;
@@ -29,7 +29,7 @@ export const RemoveButton = styled(PrimaryButton)`
 	width: 100px;
 	padding: 8px;
 
-	&&:hover {
+	&:hover {
 		background-color: rgb(255, 0, 0, 0.5);
 	}
 `;
