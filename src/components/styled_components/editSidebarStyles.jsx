@@ -9,6 +9,20 @@ export const StyledSidebar = styled.div`
 	max-width: 750px;
 `;
 
+export const StyledTemplateBlock = styled.div`
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, 0.2);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	padding: 12px;
+	position: sticky;
+	top: 8px;
+	z-index: 3;
+`;
+
 export const StyledFormContainer = styled.div`
 	display: flex;
 	flex-direction: column;

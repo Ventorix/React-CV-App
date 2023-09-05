@@ -14,7 +14,8 @@ const theme = {
 
 	$size__s: '14px',
 	$size__m: '16px',
-	$size__l: '24px',
+	$size__l: '20px',
+	$size__x: '24px',
 	$size__xl: '30px',
 };
 

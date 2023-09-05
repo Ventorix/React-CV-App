@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 
 export const PrimaryButton = styled.button`
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: ${(props) => props.theme.$orange};
 	color: white;
 	border-radius: 8px;
 	border-color: transparent;
 	width: 150px;
 	padding: 14px;
-	font-size: ${(props) => props.theme.$size__l};
+	font-size: ${(props) => props.theme.$size__m};
 	font-weight: 700;
 	cursor: pointer;
 	&:hover {

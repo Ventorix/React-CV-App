@@ -1,10 +1,18 @@
-import { PrimaryButton } from './ButtonStyles';
+import { PrimaryButton, DestructiveButton } from './ButtonStyles';
 
-function Button({ children, ...props }) {
+function Button({ children, color, ...props }) {
 	return (
-		<PrimaryButton {...props} onClick={props.onClick}>
-			{children}
-		</PrimaryButton>
+		<>
+			{color === 'red' ? (
+				<DestructiveButton {...props} onClick={props.onClick}>
+					{children}
+				</DestructiveButton>
+			) : (
+				<PrimaryButton {...props} onClick={props.onClick}>
+					{children}
+				</PrimaryButton>
+			)}
+		</>
 	);
 }
 
