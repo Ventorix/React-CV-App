@@ -7,10 +7,17 @@ import Footer from './components/Footer';
 function App() {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
+	const [phone, setPhone] = useState('');
+	const [location, setLocation] = useState('');
 	return (
 		<Wrapper>
-			<Sidebar setName={setName} setEmail={setEmail} />
-			<Resume name={name} email={email} />
+			<Sidebar
+				setName={setName}
+				setEmail={setEmail}
+				setPhone={setPhone}
+				setLocation={setLocation}
+			/>
+			<Resume name={name} email={email} phone={phone} location={location} />
 			<Footer />
 		</Wrapper>
 	);

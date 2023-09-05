@@ -2,16 +2,17 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.main`
 	position: relative;
-	max-width: 1280px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	max-width: 1500px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem;
 	min-height: 90vh;
 	max-height: 100%;
 	padding-bottom: 100px;
+	gap: 30px;
 `;
 
 export const StyledFooter = styled.footer`

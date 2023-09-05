@@ -22,7 +22,7 @@ export const StyledForm = styled.form`
 	padding: 3em;
 `;
 
-export const StyledInputBlock = styled.form`
+export const StyledInputBlock = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;

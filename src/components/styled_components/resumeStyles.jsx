@@ -21,6 +21,7 @@ export const StyledResume = styled.div`
 export const StyledResumeTopBlock = styled.div`
 	color: ${(props) => props.theme.$white};
 	background-color: ${(props) => props.theme.$primary};
+	text-align: center;
 	padding: 36px 24px;
 `;
 

@@ -13,9 +13,23 @@ function Form(props) {
 			<InputBlock
 				labelText={'Email'}
 				placeholderText={'Enter email'}
-				recommendedText={'recommended'}
+				recommendText={'recommended'}
 				setValue={props.setEmail}
 				id='email'
+			/>
+			<InputBlock
+				labelText={'Phone Number'}
+				placeholderText={'Enter phone number'}
+				recommendText={'recommended'}
+				setValue={props.setPhone}
+				id='phone'
+			/>
+			<InputBlock
+				labelText={'Address'}
+				placeholderText={'City, Country'}
+				recommendText={'recommended'}
+				setValue={props.setLocation}
+				id='location'
 			/>
 		</StyledForm>
 	);

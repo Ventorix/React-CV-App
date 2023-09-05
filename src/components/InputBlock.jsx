@@ -4,11 +4,7 @@ import InputLabel from './InputLabel';
 function InputBlock(props) {
 	return (
 		<StyledInputBlock>
-			<InputLabel
-				htmlFor={props.id}
-				text={props.labelText}
-				recommendedText={props.recommendedText}
-			/>
+			<InputLabel htmlFor={props.id} text={props.labelText} recommendText={props.recommendText} />
 			<TextInput
 				placeholder={props.placeholderText}
 				onChange={(e) => props.setValue(e.target.value)}
