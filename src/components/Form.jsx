@@ -7,28 +7,36 @@ function Form(props) {
 			<InputBlock
 				labelText={'Full name'}
 				placeholderText={'First and last name'}
-				setValue={props.setName}
+				setInfo={props.setInfo}
+				info={props.info}
+				property={'name'}
 				id='full-name'
 			/>
 			<InputBlock
 				labelText={'Email'}
 				placeholderText={'Enter email'}
 				recommendText={'recommended'}
-				setValue={props.setEmail}
+				setInfo={props.setInfo}
+				info={props.info}
+				property={'email'}
 				id='email'
 			/>
 			<InputBlock
 				labelText={'Phone Number'}
 				placeholderText={'Enter phone number'}
 				recommendText={'recommended'}
-				setValue={props.setPhone}
+				setInfo={props.setInfo}
+				info={props.info}
+				property={'phone'}
 				id='phone'
 			/>
 			<InputBlock
 				labelText={'Address'}
 				placeholderText={'City, Country'}
 				recommendText={'recommended'}
-				setValue={props.setLocation}
+				setInfo={props.setInfo}
+				info={props.info}
+				property={'location'}
 				id='location'
 			/>
 		</StyledForm>

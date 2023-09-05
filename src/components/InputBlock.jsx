@@ -7,7 +7,7 @@ function InputBlock(props) {
 			<InputLabel htmlFor={props.id} text={props.labelText} recommendText={props.recommendText} />
 			<TextInput
 				placeholder={props.placeholderText}
-				onChange={(e) => props.setValue(e.target.value)}
+				onChange={(e) => props.setInfo({ ...props.info, [props.property]: e.target.value })}
 				id={props.id}
 			/>
 		</StyledInputBlock>

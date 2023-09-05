@@ -5,19 +5,12 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
-	const [phone, setPhone] = useState('');
-	const [location, setLocation] = useState('');
+	const [info, setInfo] = useState({ name: '', email: '', phone: '', location: '' });
+
 	return (
 		<Wrapper>
-			<Sidebar
-				setName={setName}
-				setEmail={setEmail}
-				setPhone={setPhone}
-				setLocation={setLocation}
-			/>
-			<Resume name={name} email={email} phone={phone} location={location} />
+			<Sidebar setInfo={setInfo} info={info} />
+			<Resume info={info} />
 			<Footer />
 		</Wrapper>
 	);

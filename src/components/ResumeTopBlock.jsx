@@ -3,23 +3,31 @@ import SmallSVGImg from './SmallSVGImg';
 function ResumeTopBlock(props) {
 	return (
 		<StyledResumeTopBlock>
-			<h1>{props.name}</h1>
+			<h1>{props.info.name}</h1>
 			<StyledContactInfoBlock>
 				<div>
-					{props.email ? <SmallSVGImg src='../src/assets/email.svg' alt='Email'></SmallSVGImg> : ''}
-					<span>{props.email}</span>
+					{props.info.email ? (
+						<SmallSVGImg src='../src/assets/email.svg' alt='Email'></SmallSVGImg>
+					) : (
+						''
+					)}
+					<span>{props.info.email}</span>
 				</div>
 				<div>
-					{props.phone ? <SmallSVGImg src='../src/assets/phone.svg' alt='Phone'></SmallSVGImg> : ''}
-					<span>{props.phone}</span>
+					{props.info.phone ? (
+						<SmallSVGImg src='../src/assets/phone.svg' alt='Phone'></SmallSVGImg>
+					) : (
+						''
+					)}
+					<span>{props.info.phone}</span>
 				</div>
 				<div>
-					{props.location ? (
+					{props.info.location ? (
 						<SmallSVGImg src='../src/assets/map-location.svg' alt='Map location'></SmallSVGImg>
 					) : (
 						''
 					)}
-					<span>{props.location}</span>
+					<span>{props.info.location}</span>
 				</div>
 			</StyledContactInfoBlock>
 		</StyledResumeTopBlock>

@@ -4,12 +4,7 @@ function Resume(props) {
 	return (
 		<StyledResumeContainer>
 			<StyledResume>
-				<ResumeTopBlock
-					name={props.name}
-					email={props.email}
-					phone={props.phone}
-					location={props.location}
-				/>
+				<ResumeTopBlock info={props.info} />
 			</StyledResume>
 		</StyledResumeContainer>
 	);
