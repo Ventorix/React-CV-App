@@ -1,5 +1,5 @@
-import TextInput from '../UI/inputs/TextInput';
-import { StyledInputBlock } from './styled_components/editSidebarStyles';
+import TextInput from '../../UI/inputs/TextInput';
+import { StyledInputBlock } from '../styled_components/editSidebarStyles';
 import InputLabel from './InputLabel';
 
 function InputBlock(props) {
@@ -11,6 +11,7 @@ function InputBlock(props) {
 				value={props.info[props.propertyArr]}
 				onChange={(e) => props.setInfo({ ...props.info, [props.propertyArr]: e.target.value })}
 				id={props.propertyArr}
+				type={props.type}
 			/>
 		</StyledInputBlock>
 	);

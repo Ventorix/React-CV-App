@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StyledSection } from './styled_components/editSidebarStyles';
+import { StyledSection } from '../styled_components/editSidebarStyles';
 import Form from './Form';
 import SectionTitle from './SectionTitle';
 

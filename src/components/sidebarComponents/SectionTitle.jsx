@@ -1,5 +1,5 @@
-import { StyledSectionTitle, StyledTitle } from './styled_components/editSidebarStyles';
-import { ArrowSVG, MediumSVG } from '../UI/svg/svg';
+import { StyledSectionTitle, StyledTitle } from '../styled_components/editSidebarStyles';
+import { ArrowSVG, MediumSVG } from '../../UI/svg/svg';
 
 function SectionTitle({ isOpen, setOpen, sectionTitle, sectionImgPath }) {
 	return (

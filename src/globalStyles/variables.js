@@ -11,7 +11,8 @@ const theme = {
 	$white: '#fff',
 	$black: '#000000',
 	$transparent_white: '#ffffff80',
-
+	$section_resume_bg: 'rgba(14, 55, 78, 0.07)',
+	$resume_accent: '#164864',
 	$size__s: '14px',
 	$size__m: '16px',
 	$size__l: '20px',

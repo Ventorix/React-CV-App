@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Wrapper } from './components/styled_components/appStyles';
-import Sidebar from './components/Sidebar';
-import Resume from './components/Resume';
+import Sidebar from './components/sidebarComponents/Sidebar';
+import Resume from './components/resumeComponents/Resume';
 import Footer from './components/Footer';
 
 function App() {

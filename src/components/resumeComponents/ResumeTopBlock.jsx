@@ -1,5 +1,5 @@
-import { StyledResumeTopBlock, StyledContactInfoBlock } from './styled_components/resumeStyles';
-import { SmallSVG } from '../UI/svg/svg';
+import { StyledResumeTopBlock, StyledContactInfoBlock } from '../styled_components/resumeStyles';
+import { SmallSVG } from '../../UI/svg/svg';
 
 function ResumeTopBlock(props) {
 	return (

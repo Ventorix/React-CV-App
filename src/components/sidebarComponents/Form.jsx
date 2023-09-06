@@ -1,4 +1,4 @@
-import { StyledForm } from './styled_components/editSidebarStyles';
+import { StyledForm } from '../styled_components/editSidebarStyles';
 import InputList from './InputList';
 
 function Form(props) {

@@ -1,4 +1,4 @@
-import { StyledSidebar, StyledFormContainer } from './styled_components/editSidebarStyles';
+import { StyledSidebar, StyledFormContainer } from '../styled_components/editSidebarStyles';
 import TemplateBlock from './TemplateBlock';
 import InfoSection from './InfoSection';
 
@@ -12,6 +12,7 @@ function Sidebar(props) {
 			'Enter phone number',
 			'City, Country',
 		],
+		inputTypesArr: ['text', 'email', 'tel', 'text'],
 	};
 
 	const educationInfoObj = {
@@ -24,6 +25,7 @@ function Sidebar(props) {
 			'Enter End Date',
 			'Enter Location',
 		],
+		inputTypesArr: ['text', 'text', 'text', 'text', 'text'],
 	};
 
 	const sectionTitlesArr = ['Personal Details', 'Education', 'Experience'];
@@ -36,7 +38,7 @@ function Sidebar(props) {
 	return (
 		<StyledSidebar>
 			<StyledFormContainer>
-				<TemplateBlock setInfo={props.setInfo} />
+				<TemplateBlock setInfo={props.setInfo} setEducationInfo={props.setEducationInfo} />
 				<InfoSection
 					info={props.info}
 					setInfo={props.setInfo}
