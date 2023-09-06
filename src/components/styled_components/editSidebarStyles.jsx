@@ -58,5 +58,7 @@ export const StyledSectionTitle = styled.div`
 
 export const StyledTitle = styled.div`
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	gap: 6px;
 `;

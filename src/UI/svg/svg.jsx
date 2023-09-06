@@ -26,6 +26,12 @@ export const SmallSVG = styled.img`
 	margin-right: 5px;
 `;
 
+export const MediumSVG = styled.img`
+	height: 32px;
+	width: 32px;
+	margin-right: 5px;
+`;
+
 export const ArrowSVG = styled(SmallSVG)`
 	height: 24px;
 	width: 24px;

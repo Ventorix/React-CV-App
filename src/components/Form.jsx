@@ -4,7 +4,7 @@ import InputList from './InputList';
 function Form(props) {
 	return (
 		<StyledForm>
-			<InputList inputInfoObj={props.inputInfoObj} setInfo={props.setInfo} info={props.info} />
+			<InputList InfoObj={props.InfoObj} setInfo={props.setInfo} info={props.info} />
 		</StyledForm>
 	);
 }

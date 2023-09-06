@@ -6,11 +6,23 @@ import Footer from './components/Footer';
 
 function App() {
 	const [info, setInfo] = useState({ name: '', email: '', phone: '', location: '' });
+	const [educationInfo, setEducationInfo] = useState({
+		school: '',
+		degree: '',
+		startDate: '',
+		endDate: '',
+		schoolLocation: '',
+	});
 
 	return (
 		<Wrapper>
-			<Sidebar setInfo={setInfo} info={info} />
-			<Resume info={info} />
+			<Sidebar
+				setInfo={setInfo}
+				info={info}
+				educationInfo={educationInfo}
+				setEducationInfo={setEducationInfo}
+			/>
+			<Resume info={info} educationInfo={educationInfo} />
 			<Footer />
 		</Wrapper>
 	);

@@ -6,6 +6,8 @@ export const StyledResumeContainer = styled.div`
 		0 8px 16px -8px rgba(0, 0, 0, 0.25);
 	height: 29.7cm;
 	width: 21cm;
+	position: sticky;
+	top: 20px;
 `;
 
 export const StyledResume = styled.div`
@@ -13,8 +15,6 @@ export const StyledResume = styled.div`
 	display: grid;
 	height: 100%;
 	width: 100%;
-	position: sticky;
-	top: 0;
 	grid-template-rows: auto 1fr;
 `;
 
