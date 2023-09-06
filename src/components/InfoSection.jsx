@@ -9,13 +9,7 @@ function InfoSection(props) {
 		<StyledSection>
 			<SectionTitle isOpen={isOpen} setOpen={setOpen} />
 			{isOpen ? (
-				<Form
-					info={props.info}
-					setInfo={props.setInfo}
-					labelTextArr={props.labelTextArr}
-					placeholderTextArr={props.placeholderTextArr}
-					propertyArr={props.propertyArr}
-				/>
+				<Form info={props.info} setInfo={props.setInfo} inputInfoObj={props.inputInfoObj} />
 			) : (
 				''
 			)}
