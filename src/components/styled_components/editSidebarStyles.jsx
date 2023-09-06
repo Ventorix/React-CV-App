@@ -33,7 +33,6 @@ export const StyledFormContainer = styled.div`
 export const StyledForm = styled.form`
 	background-color: ${(props) => props.theme.$white};
 	border-radius: 2rem;
-	padding: 1.5em;
 `;
 
 export const StyledSection = styled.div`
@@ -55,11 +54,9 @@ export const StyledSectionTitle = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
-	gap: 6px;
 `;
 
 export const StyledTitle = styled.div`
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	gap: 6px;
 `;

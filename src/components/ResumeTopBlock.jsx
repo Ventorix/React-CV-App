@@ -4,7 +4,7 @@ import { SmallSVG } from '../UI/svg/svg';
 function ResumeTopBlock(props) {
 	return (
 		<StyledResumeTopBlock>
-			<h1 style={{ margin: '0' }}>{props.info.name}</h1>
+			<h1>{props.info.name}</h1>
 			<StyledContactInfoBlock>
 				<div>
 					{props.info.email ? <SmallSVG src='../src/assets/email.svg' alt='Email'></SmallSVG> : ''}

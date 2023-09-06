@@ -1,43 +1,15 @@
 import { StyledForm } from './styled_components/editSidebarStyles';
-import InputBlock from './InputBlock';
+import InputList from './InputList';
 
 function Form(props) {
 	return (
 		<StyledForm>
-			<InputBlock
-				labelText={'Full name'}
-				placeholderText={'First and last name'}
+			<InputList
+				labelTextArr={props.labelTextArr}
+				placeholderTextArr={props.placeholderTextArr}
+				propertyArr={props.propertyArr}
 				setInfo={props.setInfo}
 				info={props.info}
-				property={'name'}
-				id='full-name'
-			/>
-			<InputBlock
-				labelText={'Email'}
-				placeholderText={'Enter email'}
-				recommendText={'recommended'}
-				setInfo={props.setInfo}
-				info={props.info}
-				property={'email'}
-				id='email'
-			/>
-			<InputBlock
-				labelText={'Phone Number'}
-				placeholderText={'Enter phone number'}
-				recommendText={'recommended'}
-				setInfo={props.setInfo}
-				info={props.info}
-				property={'phone'}
-				id='phone'
-			/>
-			<InputBlock
-				labelText={'Address'}
-				placeholderText={'City, Country'}
-				recommendText={'recommended'}
-				setInfo={props.setInfo}
-				info={props.info}
-				property={'location'}
-				id='location'
 			/>
 		</StyledForm>
 	);
