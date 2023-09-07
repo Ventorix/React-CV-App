@@ -39,6 +39,11 @@ export const StyledSection = styled.div`
 	background-color: ${(props) => props.theme.$white};
 	border-radius: 2rem;
 	padding: 1.5em;
+	min-width: 350px;
+
+	@media (max-width: 460px) {
+		padding: 0.5em;
+	}
 `;
 
 export const StyledInputBlock = styled.div`
@@ -54,6 +59,7 @@ export const StyledSectionTitle = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
+	gap: 6px;
 `;
 
 export const StyledTitle = styled.div`

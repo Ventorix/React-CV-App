@@ -8,6 +8,36 @@ export const StyledResumeContainer = styled.div`
 	width: 21cm;
 	position: sticky;
 	top: 10px;
+
+	@media (max-width: 870px) {
+		flex-shrink: 0;
+		transform: scale(0.9);
+		margin: -40px 0;
+	}
+	@media (max-width: 790px) {
+		transform: scale(0.8);
+		margin: -100px 0;
+	}
+	@media (max-width: 710px) {
+		transform: scale(0.7);
+		margin: -160px 0;
+	}
+	@media (max-width: 630px) {
+		transform: scale(0.6);
+		margin: -220px 0;
+	}
+	@media (max-width: 548px) {
+		transform: scale(0.5);
+		margin: -280px 0;
+	}
+	@media (max-width: 460px) {
+		transform: scale(0.4);
+		margin: -340px 0;
+	}
+	@media (max-width: 370px) {
+		transform: scale(0.35);
+		margin: -370px 0;
+	}
 `;
 
 export const StyledResume = styled.div`
