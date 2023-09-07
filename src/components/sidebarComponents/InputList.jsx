@@ -3,7 +3,7 @@ import InputBlock from './InputBlock';
 function InputList(props) {
 	return (
 		<>
-			{props.InfoObj.inputTypesArr.map((item, i) => {
+			{props.InfoObj.propertyArr.map((item, i) => {
 				return (
 					<InputBlock
 						labelTextArr={props.InfoObj.labelTextArr[i]}

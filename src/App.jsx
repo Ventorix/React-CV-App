@@ -13,6 +13,14 @@ function App() {
 		endDate: '',
 		schoolLocation: '',
 	});
+	const [experienceInfo, setExperienceInfo] = useState({
+		companyName: '',
+		positionTitle: '',
+		startDate: '',
+		endDate: '',
+		companyLocation: '',
+		description: '',
+	});
 
 	return (
 		<Wrapper>
@@ -21,8 +29,10 @@ function App() {
 				info={info}
 				educationInfo={educationInfo}
 				setEducationInfo={setEducationInfo}
+				experienceInfo={experienceInfo}
+				setExperienceInfo={setExperienceInfo}
 			/>
-			<Resume info={info} educationInfo={educationInfo} />
+			<Resume info={info} educationInfo={educationInfo} experienceInfo={experienceInfo} />
 			<Footer />
 		</Wrapper>
 	);

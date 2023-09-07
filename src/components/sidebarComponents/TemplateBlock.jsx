@@ -12,6 +12,14 @@ function TemplateBlock(props) {
 			endDate: '',
 			schoolLocation: '',
 		});
+		props.setExperienceInfo({
+			companyName: '',
+			positionTitle: '',
+			startDate: '',
+			endDate: '',
+			companyLocation: '',
+			description: '',
+		});
 	}
 
 	function loadTemplate() {
@@ -24,9 +32,18 @@ function TemplateBlock(props) {
 		props.setEducationInfo({
 			school: 'University of London',
 			degree: 'Bachelors in Computer Science',
-			startDate: '2018-11-25',
-			endDate: '2023-09-15',
+			startDate: '2015/11/25',
+			endDate: '2020/09/15',
 			schoolLocation: 'London, UK',
+		});
+		props.setExperienceInfo({
+			companyName: 'A Better Company',
+			positionTitle: 'Web Developer',
+			startDate: '2021/04/15',
+			endDate: '2022/07/03',
+			companyLocation: 'Los Angeles, California',
+			description:
+				'Designed and prototyped user interface patterns for various clients in various industries, ranging from self-service apps within the telecommunications-sector to mobile games for IOS and Android',
 		});
 	}
 

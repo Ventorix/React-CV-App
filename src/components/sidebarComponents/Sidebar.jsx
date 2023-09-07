@@ -28,6 +28,27 @@ function Sidebar(props) {
 		inputTypesArr: ['text', 'text', 'text', 'text', 'text'],
 	};
 
+	const experienceInfoObj = {
+		labelTextArr: [
+			'Company Name',
+			'Position Title',
+			'Start Date',
+			'End Date',
+			'Location',
+			'Description',
+		],
+		propertyArr: Object.keys(props.experienceInfo),
+		placeholderTextArr: [
+			'Enter Company Name',
+			'Enter Position Title',
+			'Enter Start Date',
+			'Enter End Date',
+			'Enter Location',
+			'Enter Description',
+		],
+		inputTypesArr: ['text', 'text', 'text', 'text', 'text'],
+	};
+
 	const sectionTitlesArr = ['Personal Details', 'Education', 'Experience'];
 	const sectionImgPathsArr = [
 		'../src/assets/contacts.svg',
@@ -38,7 +59,11 @@ function Sidebar(props) {
 	return (
 		<StyledSidebar>
 			<StyledFormContainer>
-				<TemplateBlock setInfo={props.setInfo} setEducationInfo={props.setEducationInfo} />
+				<TemplateBlock
+					setInfo={props.setInfo}
+					setEducationInfo={props.setEducationInfo}
+					setExperienceInfo={props.setExperienceInfo}
+				/>
 				<InfoSection
 					info={props.info}
 					setInfo={props.setInfo}
@@ -52,6 +77,13 @@ function Sidebar(props) {
 					InfoObj={educationInfoObj}
 					sectionTitle={sectionTitlesArr[1]}
 					sectionImgPath={sectionImgPathsArr[1]}
+				/>
+				<InfoSection
+					info={props.experienceInfo}
+					setInfo={props.setExperienceInfo}
+					InfoObj={experienceInfoObj}
+					sectionTitle={sectionTitlesArr[2]}
+					sectionImgPath={sectionImgPathsArr[2]}
 				/>
 			</StyledFormContainer>
 		</StyledSidebar>

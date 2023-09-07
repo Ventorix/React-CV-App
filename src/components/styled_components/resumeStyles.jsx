@@ -81,7 +81,7 @@ export const StyledResumeInfoBlock = styled.div`
 `;
 
 export const StyledResumeInfoGroup = styled.div`
-	min-width: 150px;
+	min-width: 200px;
 `;
 
 export const StyledResumeSectionTitle = styled.div`

@@ -7,7 +7,10 @@ function Resume(props) {
 		<StyledResumeContainer>
 			<StyledResume>
 				<ResumeTopBlock info={props.info} />
-				<ResumeInfoSection info={props.educationInfo} title={'Education'} />
+				<div>
+					<ResumeInfoSection info={props.educationInfo} title={'Education'} />
+					<ResumeInfoSection info={props.experienceInfo} title={'Experience'} />
+				</div>
 			</StyledResume>
 		</StyledResumeContainer>
 	);
