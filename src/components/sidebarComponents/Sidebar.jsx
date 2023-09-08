@@ -52,7 +52,7 @@ const Sidebar = React.forwardRef((props, ref) => {
 
 	const sectionTitlesArr = ['Personal Details', 'Education', 'Experience'];
 	const sectionImgPathsArr = [
-		'../src/assets/contacts.svg',
+		'../src/assets/profile-card.svg',
 		'../src/assets/education.svg',
 		'../src/assets/briefcase.svg',
 	];

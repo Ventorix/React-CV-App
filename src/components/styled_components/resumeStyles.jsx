@@ -7,7 +7,7 @@ export const StyledResumeContainer = styled.div`
 	height: 29.7cm;
 	width: 21cm;
 	position: sticky;
-	top: 10px;
+	top: 5px;
 
 	@media (max-width: 870px) {
 		flex-shrink: 0;

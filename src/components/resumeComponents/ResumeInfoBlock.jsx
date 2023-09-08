@@ -4,7 +4,12 @@ function ResumeInfoBlock(props) {
 	return (
 		<StyledResumeInfoBlock>
 			<StyledResumeInfoGroup>
-				<p>{`${props.info[propertyArr[2]]} - ${props.info[propertyArr[3]]}`}</p>
+				{props.info[propertyArr[2]] || props.info[propertyArr[3]] ? (
+					<p>{`${props.info[propertyArr[2]]} - ${props.info[propertyArr[3]]}`}</p>
+				) : (
+					''
+				)}
+
 				<p>{props.info[propertyArr[4]]}</p>
 			</StyledResumeInfoGroup>
 			<StyledResumeInfoGroup>

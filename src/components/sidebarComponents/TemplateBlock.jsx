@@ -78,7 +78,10 @@ function TemplateBlock({ resumeRef, ...props }) {
 			<Button color={'red'} onClick={clearInfo}>
 				<MediumSVG src='../src/assets/trash.svg'></MediumSVG>Clear fields
 			</Button>
-			<Button onClick={loadTemplate}>Load template</Button>
+			<Button onClick={loadTemplate}>
+				<MediumSVG src='../src/assets/document.svg'></MediumSVG>
+				Load template
+			</Button>
 			<Button color={'green'} onClick={handlePrint}>
 				<MediumSVG src='../src/assets/pdf.svg'></MediumSVG>
 				Print
