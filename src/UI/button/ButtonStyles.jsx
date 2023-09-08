@@ -9,13 +9,17 @@ export const PrimaryButton = styled.button`
 	border-radius: 8px;
 	border-color: transparent;
 	width: 150px;
-	padding: 14px;
+	padding: 5px;
 	font-size: ${(props) => props.theme.$size__m};
 	font-weight: 700;
 	cursor: pointer;
 	&:hover {
 		background-color: rgba(243, 166, 64, 0.8);
 		border: 2px solid white;
+	}
+
+	@media (max-width: 460px) {
+		width: 110px;
 	}
 `;
 
