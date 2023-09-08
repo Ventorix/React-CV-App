@@ -51,11 +51,7 @@ const Sidebar = React.forwardRef((props, ref) => {
 	};
 
 	const sectionTitlesArr = ['Personal Details', 'Education', 'Experience'];
-	const sectionImgPathsArr = [
-		['profile-card', 'svg'],
-		['education', 'svg'],
-		['briefcase', 'svg'],
-	];
+	const sectionImgPathsArr = ['profile-card.svg', 'education.svg', 'briefcase.svg'];
 
 	return (
 		<StyledSidebar>

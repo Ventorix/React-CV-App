@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import Button from '../../UI/button/Button';
 import { useReactToPrint } from 'react-to-print';
 import { MediumSVG } from '../../UI/svg/svg';
-import getImageUrl from '../../utils/getImgURL';
 
 function TemplateBlock({ resumeRef, ...props }) {
 	function clearInfo() {
@@ -77,14 +76,14 @@ function TemplateBlock({ resumeRef, ...props }) {
 	return (
 		<StyledTemplateBlock>
 			<Button color={'red'} onClick={clearInfo}>
-				<MediumSVG src={getImageUrl('trash', 'svg')}></MediumSVG>Clear fields
+				<MediumSVG src={'trash.svg'}></MediumSVG>Clear fields
 			</Button>
 			<Button onClick={loadTemplate}>
-				<MediumSVG src={getImageUrl('document', 'svg')}></MediumSVG>
+				<MediumSVG src={'document.svg'}></MediumSVG>
 				Load template
 			</Button>
 			<Button color={'green'} onClick={handlePrint}>
-				<MediumSVG src={getImageUrl('pdf', 'svg')}></MediumSVG>
+				<MediumSVG src={'pdf.svg'}></MediumSVG>
 				Print
 			</Button>
 		</StyledTemplateBlock>
