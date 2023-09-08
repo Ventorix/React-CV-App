@@ -1,11 +1,11 @@
 import { StyledSectionTitle, StyledTitle } from '../styled_components/editSidebarStyles';
-import { ArrowSVG, MediumSVG } from '../../UI/svg/svg';
+import { ArrowSVG, BigSVG } from '../../UI/svg/svg';
 
 function SectionTitle({ isOpen, setOpen, sectionTitle, sectionImgPath }) {
 	return (
 		<StyledSectionTitle onClick={() => setOpen((p) => !p)}>
 			<StyledTitle>
-				<MediumSVG src={sectionImgPath} alt='Section img'></MediumSVG>
+				<BigSVG src={sectionImgPath} alt='Section img'></BigSVG>
 				<h2 style={{ fontSize: '2rem' }}>{sectionTitle}</h2>
 			</StyledTitle>
 			{isOpen ? (

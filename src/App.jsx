@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Wrapper } from './components/styled_components/appStyles';
 import Sidebar from './components/sidebarComponents/Sidebar';
 import Resume from './components/resumeComponents/Resume';
@@ -21,10 +21,12 @@ function App() {
 		companyLocation: '',
 		description: '',
 	});
+	const reportRef = useRef(null);
 
 	return (
 		<Wrapper>
 			<Sidebar
+				ref={reportRef}
 				setInfo={setInfo}
 				info={info}
 				educationInfo={educationInfo}
@@ -32,7 +34,12 @@ function App() {
 				experienceInfo={experienceInfo}
 				setExperienceInfo={setExperienceInfo}
 			/>
-			<Resume info={info} educationInfo={educationInfo} experienceInfo={experienceInfo} />
+			<Resume
+				ref={reportRef}
+				info={info}
+				educationInfo={educationInfo}
+				experienceInfo={experienceInfo}
+			/>
 			<Footer />
 		</Wrapper>
 	);

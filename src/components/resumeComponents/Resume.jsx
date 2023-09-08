@@ -1,10 +1,11 @@
 import { StyledResumeContainer, StyledResume } from '../styled_components/resumeStyles';
 import ResumeTopBlock from './ResumeTopBlock';
 import ResumeInfoSection from './ResumeInfoSection';
+import React from 'react';
 
-function Resume(props) {
+const Resume = React.forwardRef((props, ref) => {
 	return (
-		<StyledResumeContainer>
+		<StyledResumeContainer ref={ref}>
 			<StyledResume>
 				<ResumeTopBlock info={props.info} />
 				<div>
@@ -14,6 +15,7 @@ function Resume(props) {
 			</StyledResume>
 		</StyledResumeContainer>
 	);
-}
+});
 
+Resume.displayName = 'Resume';
 export default Resume;

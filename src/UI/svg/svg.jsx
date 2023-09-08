@@ -27,6 +27,12 @@ export const SmallSVG = styled.img`
 `;
 
 export const MediumSVG = styled.img`
+	height: 24px;
+	width: 24px;
+	margin-right: 5px;
+`;
+
+export const BigSVG = styled.img`
 	height: 32px;
 	width: 32px;
 	margin-right: 5px;

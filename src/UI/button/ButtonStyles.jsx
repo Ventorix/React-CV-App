@@ -27,12 +27,10 @@ export const DestructiveButton = styled(PrimaryButton)`
 	}
 `;
 
-export const RemoveButton = styled(PrimaryButton)`
-	background-color: rgb(255, 0, 0);
-	width: 100px;
-	padding: 8px;
+export const AcceptButton = styled(PrimaryButton)`
+	background-color: rgba(54, 255, 47, 0.7);
 
 	&:hover {
-		background-color: rgb(255, 0, 0, 0.5);
+		background-color: rgba(54, 255, 47, 0.5);
 	}
 `;

@@ -1,8 +1,9 @@
 import { StyledSidebar, StyledFormContainer } from '../styled_components/editSidebarStyles';
 import TemplateBlock from './TemplateBlock';
 import InfoSection from './InfoSection';
+import React from 'react';
 
-function Sidebar(props) {
+const Sidebar = React.forwardRef((props, ref) => {
 	const contactsInfoObj = {
 		labelTextArr: ['Full name', 'Email', 'Phone Number', 'Address'],
 		propertyArr: Object.keys(props.info),
@@ -60,6 +61,7 @@ function Sidebar(props) {
 		<StyledSidebar>
 			<StyledFormContainer>
 				<TemplateBlock
+					resumeRef={ref}
 					setInfo={props.setInfo}
 					setEducationInfo={props.setEducationInfo}
 					setExperienceInfo={props.setExperienceInfo}
@@ -88,6 +90,7 @@ function Sidebar(props) {
 			</StyledFormContainer>
 		</StyledSidebar>
 	);
-}
+});
 
+Sidebar.displayName = 'Sidebar';
 export default Sidebar;

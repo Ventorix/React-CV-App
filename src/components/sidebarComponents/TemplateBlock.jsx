@@ -1,8 +1,10 @@
 import { StyledTemplateBlock } from '../styled_components/editSidebarStyles';
 import { useEffect } from 'react';
 import Button from '../../UI/button/Button';
+import { useReactToPrint } from 'react-to-print';
+import { MediumSVG } from '../../UI/svg/svg';
 
-function TemplateBlock(props) {
+function TemplateBlock({ resumeRef, ...props }) {
 	function clearInfo() {
 		props.setInfo({ name: '', email: '', phone: '', location: '' });
 		props.setEducationInfo({
@@ -47,14 +49,40 @@ function TemplateBlock(props) {
 		});
 	}
 
+	// Solution for PDF resume, but don't see svg
+	/* 	function generatePDF() {
+		const resume = new JsPDF('p', 'px', 'a4');
+
+		resume.html(resumeRef.current, {
+			html2canvas: {
+				scale: 0.568,
+				scrollY: 0,
+			},
+			x: 0.5,
+			y: -5,
+			callback: function (resume) {
+				resume.save();
+			},
+		});
+	} */
+
+	const handlePrint = useReactToPrint({
+		content: () => resumeRef.current,
+		documentTitle: '.',
+	});
+
 	useEffect(loadTemplate, []);
 
 	return (
 		<StyledTemplateBlock>
 			<Button color={'red'} onClick={clearInfo}>
-				<img src='../src/assets/trash.svg'></img>Clear fields
+				<MediumSVG src='../src/assets/trash.svg'></MediumSVG>Clear fields
 			</Button>
 			<Button onClick={loadTemplate}>Load template</Button>
+			<Button color={'green'} onClick={handlePrint}>
+				<MediumSVG src='../src/assets/pdf.svg'></MediumSVG>
+				Print
+			</Button>
 		</StyledTemplateBlock>
 	);
 }

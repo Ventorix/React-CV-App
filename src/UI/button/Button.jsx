@@ -1,4 +1,4 @@
-import { PrimaryButton, DestructiveButton } from './ButtonStyles';
+import { PrimaryButton, DestructiveButton, AcceptButton } from './ButtonStyles';
 
 function Button({ children, color, ...props }) {
 	return (
@@ -7,6 +7,10 @@ function Button({ children, color, ...props }) {
 				<DestructiveButton {...props} onClick={props.onClick}>
 					{children}
 				</DestructiveButton>
+			) : color === 'green' ? (
+				<AcceptButton {...props} onClick={props.onClick}>
+					{children}
+				</AcceptButton>
 			) : (
 				<PrimaryButton {...props} onClick={props.onClick}>
 					{children}
